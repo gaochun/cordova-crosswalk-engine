@@ -45,8 +45,8 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 
+import org.xwalk.core.internal.XWalkWebChromeClient;
 import org.xwalk.core.XWalkJavascriptResult;
-import org.xwalk.core.XWalkWebChromeClient;
 import org.xwalk.core.XWalkUIClient;
 import org.xwalk.core.XWalkView;
 
@@ -328,7 +328,7 @@ public class XWalkCordovaChromeClient extends XWalkUIClient implements CordovaCh
         appView = view;
     }
     
-    @Override
+    //@Override
     /**
      * Ask the host application for a custom progress view to show while
      * a <video> is loading.

@@ -65,14 +65,14 @@ import android.webkit.WebChromeClient.CustomViewCallback;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout.LayoutParams;
 
+import org.xwalk.core.internal.XWalkSettings;
+import org.xwalk.core.internal.XWalkWebChromeClient;
 import org.xwalk.core.XWalkNavigationHistory;
 import org.xwalk.core.XWalkNavigationItem;
 import org.xwalk.core.XWalkPreferences;
 import org.xwalk.core.XWalkResourceClient;
-import org.xwalk.core.XWalkSettings;
 import org.xwalk.core.XWalkUIClient;
 import org.xwalk.core.XWalkView;
-import org.xwalk.core.XWalkWebChromeClient;
 /*
  * This class is our web view.
  *
@@ -243,7 +243,7 @@ public class XWalkCordovaWebView implements CordovaWebView {
      * main application's CordovaActivity subclass.
      */
     @Override
-    public CordovaChromeClient makeWebChromeClient() {
+    public CordovaChromeClient makeChromeClient() {
         return new XWalkCordovaChromeClient(this.cordova, this);
     }
 

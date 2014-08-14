@@ -45,11 +45,11 @@ import android.view.View;
 import android.webkit.ValueCallback;
 import android.webkit.WebResourceResponse;
 
+import org.xwalk.core.internal.XWalkClient;
+import org.xwalk.core.internal.XWalkHttpAuthHandler;
 import org.chromium.net.NetError;
 import org.xwalk.core.XWalkResourceClient;
 import org.xwalk.core.XWalkView;
-import org.xwalk.core.XWalkClient;
-import org.xwalk.core.XWalkHttpAuthHandler;
 
 /**
  * This class is the WebViewClient that implements callbacks for our web view.
