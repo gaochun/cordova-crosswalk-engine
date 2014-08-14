@@ -243,7 +243,7 @@ public class XWalkCordovaWebView implements CordovaWebView {
      * main application's CordovaActivity subclass.
      */
     @Override
-    public CordovaChromeClient makeWebChromeClient() {
+    public CordovaChromeClient makeChromeClient() {
         return new XWalkCordovaChromeClient(this.cordova, this);
     }
 
